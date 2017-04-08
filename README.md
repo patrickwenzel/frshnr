@@ -1,6 +1,8 @@
-#frshnr
+frshnr
+======
 
-##Dependencies
+Dependencies
+------------
 
 - Node.js / NPM
 - Gulp
@@ -8,16 +10,17 @@
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
 - browserSync
 
-##Initialize
+Initialize
+----------
 
 Install dependencies...
-	
+
 	npm install
-	
+
 Run tasks...
 
 	gulp
-	
+
 Build compile...
 
 	gulp build
