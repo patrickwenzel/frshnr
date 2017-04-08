@@ -1,0 +1,7 @@
+<nav class="main-nav" role="navigation">
+  <ul>
+    {% for nav in navItems %}
+    <li {% if nav.menu_item == active %}class="active"{% endif %}><a href="{{ nav.menu_href }}">{{ nav.menu_title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

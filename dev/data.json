@@ -2,11 +2,8 @@
   "navItems" : [
     {
       "menu_title" : "Home",
-      "menu_item" : "index"
-    },
-    {
-      "menu_title" : "About",
-      "menu_item" : "about"
+      "menu_item" : "home",
+      "menu_href" : "/"
     }
   ]
 }
