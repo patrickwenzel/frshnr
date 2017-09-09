@@ -19,7 +19,8 @@ gulp.task('nunjucks', function() {
       return require('./dev/data.json')
     }))
     .pipe(nunjucksRender({
-      path: ['dev/templates']
+      path: ['dev/templates'],
+      envOptions: {autoescape: false}
     }))
     .pipe(gulp.dest('dev'))
 });
@@ -39,7 +40,7 @@ gulp.task('sass', function() {
 // Watch task
 gulp.task('watch', ['browserSync', 'sass', 'nunjucks'], function() {
   gulp.watch('dev/scss/**/*.+(scss|sass)', ['sass']);
-  gulp.watch('dev/pages/*.+(html|njk|nunjucks)', ['nunjucks']);
+  gulp.watch('dev/pages/**/*.+(html|njk|nunjucks)', ['nunjucks']);
   gulp.watch('dev/templates/**/*.+(html|njk|nunjucks)', ['nunjucks']);
   gulp.watch('dev/js/**/*.js', browserSync.reload);
   gulp.watch('dev/*.html', browserSync.reload);

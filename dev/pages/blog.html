@@ -1,0 +1,14 @@
+{% set title = 'Blog' %}
+{% set description = 'Blog roll' %}
+{% set active = 'Blog' %}
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% import "macros/blog-macro.html" as roll %}
+
+{% for blg in Blog %}
+  {{ roll.blog(blg.id, blg.title, blg.year, blg.excerpt) }}
+{% endfor %}
+
+{% endblock %}

@@ -6,20 +6,20 @@
      <meta name="description" content="{{description}}">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <!--build:css css/main.min.css-->
-     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="/css/main.css">
      <!--endbuild-->
   </head>
   <body>
-    <header class="" role="banner">
+    <header class="site-header" role="banner">
     {% block banner %}
-      {% include "partials/banner.njk" %}
+      {% include "partials/banner.html" %}
     {% endblock %}
     </header>
-    <main class="" role="main">
+    <main class="content" role="main">
     {% block content %}
     {% endblock %}
     </main>
-    <footer class="">
+    <footer class="site-footer" role="contentinfo">
     </footer>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script

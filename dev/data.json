@@ -1,9 +1,22 @@
 {
-  "navItems" : [
+  "Navigation" : [
     {
       "menu_title" : "Home",
       "menu_item" : "home",
       "menu_href" : "/"
+    },
+    {
+      "menu_title" : "Blog",
+      "menu_item" : "blog",
+      "menu_href" : "/blog.html"
+    }
+  ],
+  "Blog" : [
+    {
+      "id" : "example",
+      "title" : "Lorem ipsum dolor sit amet",
+      "year" : "2017",
+      "excerpt" : "<p>Duis egestas bibendum elit, in egestas sapien tristique nec. Cras sodales, sem et eleifend tincidunt, sapien neque pretium nibh, sed malesuada est nunc vel nisl.</p>"
     }
   ]
 }

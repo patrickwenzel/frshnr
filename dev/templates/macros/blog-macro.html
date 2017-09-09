@@ -1,0 +1,10 @@
+{% macro blog(id, title, year, excerpt) %}
+<article class="entry">
+  <a href="/blog/{{year}}/{{ id }}.html">
+    <div class="entry-title">{{ title }}</div>
+    <div class="entry-excerpt">
+      {{ excerpt }}
+    </div>
+  </a>
+</article>
+{% endmacro %}
